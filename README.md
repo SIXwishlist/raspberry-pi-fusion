@@ -2,7 +2,7 @@
 
 # Pi Fusion
 
-# Features
+# Features:
 ## Information
 ## Monitoring
 ## Controlling
