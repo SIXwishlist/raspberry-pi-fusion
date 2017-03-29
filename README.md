@@ -5,7 +5,7 @@
 # Features
 ## Information
 ## Monitoring
-## Contrilloing
+## Controlling
 ## Tools
 
 
