@@ -1,5 +1,6 @@
 # Under Development! Please wait for initial release!
-# This version of Pi Fusion is not released yet. This site is still a construction site.
+# This version of Pi Fusion is not released yet.
+# This site is still a construction site.
 -------------------------------------------------------------
 # Pi Fusion
 
