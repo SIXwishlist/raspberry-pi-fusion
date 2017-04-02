@@ -54,6 +54,7 @@ sudo -u www-data git pull
 ```
 
 ## Support:
+** Support requests by private message will not be answered! Use the public options as listed below. **
 ### @ ElectroDrome.Net
 Create an user account @ https://electrodrome.net to use the services.
 #### Forum
