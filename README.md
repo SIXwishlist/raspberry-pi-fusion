@@ -68,7 +68,7 @@ English language is supported in this forum. Otherwise you can translate the who
 The forum of Pi Fusion can be found [here](https://electrodrome.net/forum/rpi-projekt-pi-fusion).
 ### @ Github
 #### Issue
-Create an issue for todos, bugs, feature requests, and more.
+Create an issue for todos, bugs, feature requests and more.
 
 ## License:
 Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that is licensed under [GNU GPL v2.0](https://www.gnu.org/licenses/gpl-2.0.en.html).
