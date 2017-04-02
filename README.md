@@ -53,22 +53,34 @@ And then start the update with:
 sudo -u www-data git pull
 ```
 
+## Support:
+### @ ElectroDrome.Net
+Create an user account @ https://electrodrome.net to use the services.
+#### Forum
+Topics
+- General information
+- Bugs and error messages
+- Ideas and suggestions
+English language is supported in this forum. Otherwise you can translate the whole website with a quick tool.
+The forum of Pi Fusion can be found [here](https://electrodrome.net/forum/rpi-projekt-pi-fusion).
+### @ Github
+
 ## License:
 Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that is licensed under [GNU GPL v2.0](https://www.gnu.org/licenses/gpl-2.0.en.html).
 
 The documentation of Pi Fusion is licensed under the terms of the [Creative Commons Attribution-ShareAlike 3.0 International license](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## Credits & 3rd Party Licenses:
-A list of the third party components and licenses used by Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/3RD-PARTY-LICENSES.md).
+A list of the third party components and licenses used by Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/3RD-PARTY-LICENSES.md).
 
 All third party licenses can be found in the included folder _licenses_.
 
 ## Contributors:
-A list of the contributors of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTORS.md).
+A list of the contributors of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTORS.md).
 
 ## To-do-list:
-The To-Do-list of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/TO-DO-LIST.md).
+The To-Do-list of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/TO-DO-LIST.md).
 
 ## Change log:
-The change log list of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CHANGELOG.md).
+The change log list of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CHANGELOG.md).
 
