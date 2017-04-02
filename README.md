@@ -56,7 +56,6 @@ sudo -u www-data git pull
 ## Support:
 **Support requests by private message will not be answered! Use the public options as listed below.**
 ### @ ElectroDrome.Net
-Create an user account @ https://electrodrome.net to use the services.
 #### Forum
 Topics
 - General information
@@ -64,6 +63,8 @@ Topics
 - Ideas and suggestions
 
 English language is supported in this forum. Otherwise you can translate the whole website with a quick tool, if German language is used. Join the forum to stay up-to-date and be informed about Pi Fusion.
+
+Create an user account @ https://electrodrome.net to use the service.
 
 The forum of Pi Fusion can be found [here](https://electrodrome.net/forum/rpi-projekt-pi-fusion).
 ### @ Github
