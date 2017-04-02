@@ -6,10 +6,10 @@
 
 ## Requirements:
 - Hardware: Raspberry Pi
-- Operating system: Raspbian GNU / Linux
-- Webserver: nginx (recommended)
-- Script language: PHP 5.6+ / PHP 7.0+ (recommended)
-- SSH server on the Raspberry Pi enabled
+- Operating system: Raspbian GNU Linux
+- Webserver: nginx (recommended) / lighttpd / Apache2
+- Script language: PHP 7.0+ (recommended) / PHP 5.6+ 
+- SSH server enabled on the Raspberry Pi
 - Active internet connection
 - JavaScript enabled in the browser
 
