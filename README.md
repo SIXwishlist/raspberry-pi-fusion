@@ -58,6 +58,7 @@ Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that i
 
 ## Credits & 3rd Party Licenses:
 A list of the third party components and licenses used by Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/3RD-PARTY-LICENSES.md).
+
 All third party licenses can be found in the included folder * *licenses* *.
 
 ## Contributors:
