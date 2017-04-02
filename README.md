@@ -63,3 +63,10 @@ All third party licenses can be found in the included folder _licenses_.
 
 ## Contributors:
 A list of the contributors of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTORS.md).
+
+## To-do-list
+The To-Do-list of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/TO-DO-LIST.md).
+
+## Change log
+The change log list of Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CHANGELOG.md).
+
