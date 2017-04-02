@@ -40,5 +40,17 @@ Start a web browser and enter the following URL with your IP:
 http://192.168.178.24/fusion/index.php
 ```
 
+## Update
+### Automatic Update (recommended)
+### Manual Update
+To update Pi Fusion to the current version manually, go to the Pi Fusion directory:
+```
+cd /var/www/html/fusion
+```
+And then start the update with:
+```
+sudo -u www-data git pull
+```
+
 ## License:
 Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that is licensed under [GNU GPL v2.0](https://www.gnu.org/licenses/gpl-2.0.en.html).
