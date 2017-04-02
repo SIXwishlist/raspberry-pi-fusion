@@ -22,12 +22,12 @@ curl -sSL https://raw.githubusercontent.com/ElectroDrome/raspberry-pi-fusion/mas
 ### Manual Installation
 A guide on how to install Pi Fusion manually on the Raspberry Pi can be found [here](https://electrodrome.net/forum/rpi-pi-fusion-general-installation/242-manuelle-installation-von-pi-fusion).
 
-## Start Pi Fusion Dashboard
-###Locally on the Raspberry Pi
+## Start Pi Fusion Dashboard:
+### Locally on the Raspberry Pi
 Start a web browser and enter the following URL:
 ```http://localhost/fusion/index.php
 ```
-###In the network
+### In the network
 If you do not know the IP address of the Raspberry Pi, you can determine it as follows (optional):
 ```
 hostname -I
