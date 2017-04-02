@@ -55,3 +55,6 @@ sudo -u www-data git pull
 
 ## License:
 Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that is licensed under [GNU GPL v2.0](https://www.gnu.org/licenses/gpl-2.0.en.html).
+
+## Credits & 3rd Party Licenses:
+A list of the third party components and licenses used by Pi Fusion found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/3RD-PARTY-LICENSES.md).
