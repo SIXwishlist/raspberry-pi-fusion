@@ -61,7 +61,9 @@ Topics
 - General information
 - Bugs and error messages
 - Ideas and suggestions
+
 English language is supported in this forum. Otherwise you can translate the whole website with a quick tool.
+
 The forum of Pi Fusion can be found [here](https://electrodrome.net/forum/rpi-projekt-pi-fusion).
 ### @ Github
 
