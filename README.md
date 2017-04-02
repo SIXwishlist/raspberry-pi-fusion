@@ -4,16 +4,16 @@
 -------------------------------------------------------------
 # Pi Fusion
 
-## Requirements
+## Requirements:
 - Hardware: Raspberry Pi
 - Operating system: Raspbian GNU / Linux
 - Webserver: nginx (recommended)
 - Script language: PHP 5.6+ / PHP 7.0+ (recommended)
-- SSH server on the Raspberry Pi (enabled)
+- SSH server on the Raspberry Pi enabled
 - Active internet connection
 - JavaScript enabled in the browser
 
-## Installation
+## Installation:
 ### Automatic Installation (recommended)
 You can install Pi Fusion automatically with an installation script on your Raspberry Pi. You must create an SSH connection and log in as a user pi. An active Internet connection must also be available. Then type the following command on the console:
 ```
