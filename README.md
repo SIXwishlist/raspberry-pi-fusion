@@ -25,7 +25,7 @@ A guide on how to install Pi Fusion manually on the Raspberry Pi can be found [h
 ## Start Pi Fusion Dashboard:
 ### Locally on the Raspberry Pi
 Start a web browser and enter the following URL:
-```http://localhost/fusion/index.php
+``` http://localhost/fusion/index.php
 ```
 ### In the network
 If you do not know the IP address of the Raspberry Pi, you can determine it as follows (optional):
@@ -35,7 +35,7 @@ hostname -I
 The output appears, for example: **192.168.178.24** 2002:25c9:924a:0:e99b:5ec7:c248:8798
 The first part shows the IP which is needed to start Pi Fusion in the network, the second part representing the IPv6 address.
 Start a web browser and enter the following URL with your IP:
-```http://192.168.178.24/fusion/index.php
+``` http://192.168.178.24/fusion/index.php
 ```
 
 ## License:
