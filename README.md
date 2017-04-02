@@ -7,7 +7,8 @@
 ## Installation
 ### Automatically Installation (recommended)
 You can install Pi Fusion automatically with an installation script on your Raspberry Pi. You must create an SSH connection and log in as a user pi. An active Internet connection must also be available. Then type the following command on the console:
-``` curl -sSL https://raw.githubusercontent.com/ElectroDrome/raspberry-pi-fusion/master/install.sh | sudo bash
+```
+curl -sSL https://raw.githubusercontent.com/ElectroDrome/raspberry-pi-fusion/master/install.sh | sudo bash
 ```
 ### Manually Installation
 A guide on how to install Pi Fusion manually on the Raspberry Pi can be found [here](https://electrodrome.net/forum/rpi-pi-fusion-general-installation/242-manuelle-installation-von-pi-fusion).
