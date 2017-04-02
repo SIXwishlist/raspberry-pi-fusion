@@ -40,8 +40,9 @@ Start a web browser and enter the following URL with your IP:
 http://192.168.178.24/fusion/index.php
 ```
 
-## Update
+## Update:
 ### Automatic Update (recommended)
+Go in Pi Fusion to the settings. Here is automatically checked if a new version is present. If a new version is available you can click **Install update**.
 ### Manual Update
 To update Pi Fusion to the current version manually, go to the Pi Fusion directory:
 ```
