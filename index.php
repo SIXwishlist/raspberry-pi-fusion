@@ -1,5 +1,4 @@
 <?php
-
 include_once 'lib/config.php';
 include_once 'lib/functions.php';
 #error_reporting(E_ALL);
@@ -34,7 +33,7 @@ include_once 'lib/functions.php';
   <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="dist/img/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="pages/favicon/favicon.ico" />
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -180,15 +179,44 @@ include_once 'lib/functions.php';
 		
 		<li class="treeview">
           <a href="#">
-            <i class="fa fa-plus-circle"></i> <span>Add-ons</span>
+            <i class="fa fa-keyboard-o"></i> <span>Control</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#"><i class="fa fa-camera"></i> Camera (CSI)</a></li>
+            <li>
+              <a href="#"><i class="fa fa-microchip"></i> GPIO Functions
+			  <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+				<li><a href="#"><i class="fa fa-exchange"></i> GPIO</a></li>
+				<li><a href="#"><i class="fa fa-exchange"></i> I2C</a></li>
+				<li><a href="#"><i class="fa fa-exchange"></i> PWM</a></li>
+				<li><a href="#"><i class="fa fa-exchange"></i> SPI</a></li>
+				<li><a href="#"><i class="fa fa-exchange"></i> UART</a></li>				
+              </ul>
+            </li>
+
+			<li><a href="#"><i class="fa fa-camera"></i> Camera (CSI)</a></li>
 			<li><a href="#"><i class="fa fa-desktop"></i> Display (DSI)</a></li>
+
           </ul>
+        </li>
+		
+		<li class="treeview">
+          <a href="#">
+            <i class="fa fa-plus-circle"></i> <span>Add-ons</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+				<ul class="treeview-menu">
+				<li><a href="#"><i class="fa fa-bitcoin"></i> Cryptocoins Miner</a></li>
+				<li><a href="#"><i class="fa  fa-microchip"></i> Sensors</a></li>
+				</ul>
         </li>
 		
 		<li class="treeview">
@@ -214,8 +242,6 @@ include_once 'lib/functions.php';
             </span>
           </a>
           <ul class="treeview-menu">
-			<li><a href="pages/doc_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
-			
 			<li>
               <a href="#"><i class="fa fa-book"></i> GPIO
                 <span class="pull-right-container">
@@ -228,6 +254,8 @@ include_once 'lib/functions.php';
 				<li><a href="pages/doc_gpio_headers_cm.php"><i class="fa fa-book"></i> Headers CM & I/O Board</a></li>				
               </ul>
             </li>
+			
+			<li><a href="pages/doc_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
 			
           </ul>
         </li>
