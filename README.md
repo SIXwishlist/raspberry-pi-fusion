@@ -5,7 +5,7 @@
 # Pi Fusion
 
 ## Status:
-Pi Fusion is still in the development stage and some things are still not working or not. Some things are dotted with the hot needle or quik and dirty programmed. Pi Fusion is constantly being expanded and improved. Nevertheless you can already use the great software.
+Pi Fusion is still in the development stage and some things are still not working or flawed. Some things are dotted with the hot needle or quik and dirty programmed. Pi Fusion is constantly being expanded and improved. Nevertheless you can already use the great software.
 
 ## Requirements:
 - Hardware: Raspberry Pi
