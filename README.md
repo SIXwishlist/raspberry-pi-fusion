@@ -3,7 +3,7 @@
 ### This site is still a construction site. Work in progress...
 -------------------------------------------------------------
 # Pi Fusion
-![dashboard_overview](images/phocagallery/computer_prog/hardware/einplatinencomputer/raspberry_pi/software_projekte/allgemein/projekt_pi_fusion/dashboard_overview.png)
+![img](images/phocagallery/computer_prog/hardware/einplatinencomputer/raspberry_pi/software_projekte/allgemein/projekt_pi_fusion/dashboard_overview.png)
 
 ## Status:
 Pi Fusion is still in the development stage and some things are still not working or flawed. Some things are dotted with the hot needle or quik and dirty programmed. Pi Fusion is constantly being expanded and improved - help us, if you want. Nevertheless you can already use the great software.
