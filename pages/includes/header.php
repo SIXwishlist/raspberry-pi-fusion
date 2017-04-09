@@ -15,7 +15,8 @@
 	  <div class="navbar-custom-menu">
 	    <ul class="nav navbar-nav navbar-right">
         <li><a title="Refresh page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
-		<li><a href="../pages/sys_terminal.php">Terminal</a></li>
+		<li><a href="../pages/tools_terminal.php">Terminal</a></li>
+		<li><a href="#">GPIO</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">

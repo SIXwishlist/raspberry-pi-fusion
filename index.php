@@ -1,6 +1,6 @@
 <?php
-include_once 'lib/config.php';
 include_once 'lib/functions.php';
+$configArray = read_Settings();
 #error_reporting(E_ALL);
 #ini_set("display_errors", 1);
 ?>
@@ -15,7 +15,7 @@ include_once 'lib/functions.php';
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   
   <!-- Refresh -->
-  <meta HTTP-EQUIV=Refresh CONTENT='<?php echo $PageRefreshDashboard; ?>'>
+  <meta HTTP-EQUIV=Refresh CONTENT='<?php echo $configArray ['page_reload_dashboard']; ?>'>
   
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -33,7 +33,7 @@ include_once 'lib/functions.php';
   <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="pages/favicon/favicon.ico" />
+  <link rel="shortcut icon" type="image/x-icon" href="pages/includes/favicon.ico" />
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,7 +62,8 @@ include_once 'lib/functions.php';
 	  <div class="navbar-custom-menu">
 	    <ul class="nav navbar-nav navbar-right">
         <li><a title="Refresh page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
-		<li><a href="pages/sys_terminal.php">Terminal</a></li>
+		<li><a href="pages/tools_terminal.php">Terminal</a></li>
+		<li><a href="#">GPIO</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -136,7 +137,7 @@ include_once 'lib/functions.php';
                 </span>
               </a>
               <ul class="treeview-menu">
-				<li><a href="pages/dev_av.php"><i class="fa fa-exchange"></i> Audio / Video</a></li>
+				<li><a href="pages/devices_av.php"><i class="fa fa-exchange"></i> Audio / Video</a></li>
 				<li><a href="pages/rpi_gpio_status.php"><i class="fa fa-exchange"></i> GPIO Status</a></li>
 				<li><a href="pages/rpi_memory.php"><i class="fa fa-exchange"></i> USB Devices</a></li>					    
               </ul>
@@ -149,15 +150,14 @@ include_once 'lib/functions.php';
                 </span>
               </a>
               <ul class="treeview-menu">
-				<li><a href="pages/sys_os.php"><i class="fa fa-server"></i> General Information</a></li>
-				<li><a href="pages/sys_modules.php"><i class="fa fa-server"></i> Kernel Modules</a></li>
-				<li><a href="pages/sys_processes.php"><i class="fa fa-server"></i> Running Processes</a></li>
-				<li><a href="pages/sys_services.php"><i class="fa fa-server"></i> Running Services</a></li>
-				<li><a href="pages/sys_packages.php"><i class="fa fa-server"></i> Software Packages</a></li>
-				<li><a href="pages/sys_users.php"><i class="fa fa-server"></i> Users & Groups</a></li>			
+				<li><a href="pages/system_os.php"><i class="fa fa-server"></i> General Information</a></li>
+				<li><a href="pages/system_modules.php"><i class="fa fa-server"></i> Kernel Modules</a></li>
+				<li><a href="pages/system_processes.php"><i class="fa fa-server"></i> Running Processes</a></li>
+				<li><a href="pages/system_services.php"><i class="fa fa-server"></i> Running Services</a></li>
+				<li><a href="pages/system_packages.php"><i class="fa fa-server"></i> Software Packages</a></li>
+				<li><a href="pages/system_users.php"><i class="fa fa-server"></i> Users & Groups</a></li>			
               </ul>
             </li>
-
           </ul>
         </li>
 
@@ -169,8 +169,8 @@ include_once 'lib/functions.php';
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/charts_overview.php"><i class="fa fa-area-chart"></i> General Overview</a></li>
-			<li><a href="pages/charts_cpu.php"><i class="fa fa-area-chart"></i> CPU</a></li>
+            <li><a href="pages/stats_overview.php"><i class="fa fa-area-chart"></i> General Overview</a></li>
+			<li><a href="pages/stats_cpu.php"><i class="fa fa-area-chart"></i> CPU</a></li>
             <li><a href="#"><i class="fa fa-area-chart"></i> Memory</a></li>
 			<li><a href="#"><i class="fa fa-area-chart"></i> Network</a></li>
 			<li><a href="#"><i class="fa fa-area-chart"></i> Storage</a></li>
@@ -199,10 +199,8 @@ include_once 'lib/functions.php';
 				<li><a href="#"><i class="fa fa-exchange"></i> UART</a></li>				
               </ul>
             </li>
-
 			<li><a href="#"><i class="fa fa-camera"></i> Camera (CSI)</a></li>
 			<li><a href="#"><i class="fa fa-desktop"></i> Display (DSI)</a></li>
-
           </ul>
         </li>
 		
@@ -227,12 +225,11 @@ include_once 'lib/functions.php';
             </span>
           </a>
           <ul class="treeview-menu">
-			<li><a href="pages/sys_phpinfo.php"><i class="fa  fa-info"></i> PHP Info</a></li>
+			<li><a href="pages/tools_phpinfo.php"><i class="fa  fa-info"></i> PHP Info</a></li>
 			<li><a href="pages/tools_pla.php"><i class="fa fa-database"></i> PHP Lite Admin</a></li>
-			<li><a href="pages/sys_terminal.php"><i class="fa fa-terminal"></i> Terminal</a></li>
+			<li><a href="pages/tools_terminal.php"><i class="fa fa-terminal"></i> Terminal</a></li>
           </ul>
         </li>
-		
 		
         <li class="treeview">
           <a href="#">
@@ -249,14 +246,12 @@ include_once 'lib/functions.php';
                 </span>
               </a>
               <ul class="treeview-menu">
-				<li><a href="pages/doc_gpio_func.php"><i class="fa fa-book"></i> Functions Overview</a></li>
-				<li><a href="pages/doc_gpio_headers.php"><i class="fa fa-book"></i> Headers RPi & Zero</a></li>		
-				<li><a href="pages/doc_gpio_headers_cm.php"><i class="fa fa-book"></i> Headers CM & I/O Board</a></li>				
+				<li><a href="pages/docs_gpio_func.php"><i class="fa fa-book"></i> Functions Overview</a></li>
+				<li><a href="pages/docs_gpio_headers.php"><i class="fa fa-book"></i> Headers RPi & Zero</a></li>		
+				<li><a href="pages/docs_gpio_headers_cm.php"><i class="fa fa-book"></i> Headers CM & I/O Board</a></li>				
               </ul>
             </li>
-			
-			<li><a href="pages/doc_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
-			
+			<li><a href="pages/docs_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
           </ul>
         </li>
 		
@@ -288,7 +283,7 @@ include_once 'lib/functions.php';
     <section class="content-header">
       <h1>
         Dashboard
-        <small>Overview. Page auto reload every <?php echo $PageRefreshDashboard; ?> seconds.</small>
+        <small>Overview. Page auto reload every <?php echo $configArray ['page_reload_dashboard']; ?> seconds.</small>
       </h1>
     </section>
 
@@ -396,7 +391,6 @@ include_once 'lib/functions.php';
           <div class="small-box bg-olive">
             <div class="inner">
               <h3><?php echo net_wlan0_Traffic() ['wlan0_total']; ?></h3>
-
               <p>WiFi (wlan0): Traffic total</p>
             </div>
             <div class="icon">
@@ -448,21 +442,35 @@ include_once 'lib/functions.php';
                 <tbody>
 				
 				<tr>
-				  <?php 
+				<?php 
 				    $usersonline = sys_Users_Connected();
 					$max = sizeof($usersonline);
-					for ($i=0; $i<$max; $i++) {
-					?>	
-					<td><?php echo $usersonline[$i]['user']; ?></td>
-					<td><?php echo $usersonline[$i]['port']; ?></td>
-					<td><?php echo $usersonline[$i]['date']; ?></td>
-					<td><?php echo $usersonline[$i]['time']; ?></td>
-					<td><?php echo $usersonline[$i]['ip']; ?></td>
-					<td><?php echo $usersonline[$i]['dns']; ?></td>
+					if ($max > 0) {  // users connected
+					
+						for ($i=0; $i<$max; $i++) {
+				?>	
+						<td><?php echo $usersonline[$i]['user']; ?></td>
+						<td><?php echo $usersonline[$i]['port']; ?></td>
+						<td><?php echo $usersonline[$i]['date']; ?></td>
+						<td><?php echo $usersonline[$i]['time']; ?></td>
+						<td><?php echo $usersonline[$i]['ip']; ?></td>
+						<td><?php echo $usersonline[$i]['dns']; ?></td>
                 </tr>
 				<?php 
+						}
+					}
+					else {  // no user connected
+				?>
+						<td><?php echo "None"; ?></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+				<?php
 					}
 				?> 
+				
 				</tbody>
 				</table>
             </div>
@@ -484,7 +492,7 @@ include_once 'lib/functions.php';
     <div class="pull-right hidden-xs">
       <b>Version </b> <?php echo (file_get_contents('VERSION')); ?>
     </div>
-    <strong>Pi Fusion</strong> &copy; by <a target="_blank" href="http://electrodrome.net">Andreas Potthoff</a> and <a href="pages/pif_credits.php">contributors</a> - 2016-2017. Pi Fusion is licensed under GPL v2.0. Raspberry Pi is a trademark of the <a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a>.
+    <strong>Pi Fusion</strong> &copy; by <a target="_blank" href="https://electrodrome.net">Andreas Potthoff</a> and <a href="pages/pif_credits.php">contributors</a> - 2016-2017. Pi Fusion is licensed under GPL v2.0. Raspberry Pi is a trademark of the <a target="_blank" href="https://www.raspberrypi.org/">Raspberry Pi Foundation</a>.
   </footer>
 
 </div>
@@ -493,7 +501,7 @@ include_once 'lib/functions.php';
 <!-- jQuery 2.2.3 -->
 <script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+<script src="plugins/jQueryUI/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
   $.widget.bridge('uibutton', $.ui.button);
@@ -506,13 +514,13 @@ include_once 'lib/functions.php';
 <script src="plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/app.min.js"></script>
+<!-- Datatables -->
 <script src="plugins/datatables/jquery.dataTables.min.js"></script>
 <script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
 <script>
   $(function () {
-    $("#example1").DataTable();
     $('#connected_users').DataTable({
-      "paging": true,
+	  "paging": true,
       "lengthChange": true,
       "searching": true,
       "ordering": true,
