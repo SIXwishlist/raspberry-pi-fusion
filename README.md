@@ -8,6 +8,11 @@
 ## Status:
 Pi Fusion is still in the development stage and some things are still not working or flawed. Some things are dotted with the hot needle or quik and dirty programmed. Pi Fusion is constantly being expanded and improved - help us, if you want. Nevertheless you can already use the great software.
 
+## Features:
+....
+### Screenshots
+A lot of screenshots can be found [here](https://electrodrome.net/service/galerie/category/69-pi-fusion-dashboard).
+
 ## Requirements:
 - Hardware: Raspberry Pi
 - Operating system: Raspbian GNU Linux
