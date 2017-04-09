@@ -1,4 +1,4 @@
-!! Needs JavaScript to activate treeview and treeview-menu !!
+!! Needs JavaScript to activate <li> tags !!
 
  <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
