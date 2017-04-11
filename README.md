@@ -32,6 +32,9 @@ Now the installation script is started and Pi Fusion is installed for you. Follo
 ### Manual Installation
 A guide on how to install Pi Fusion manually on the Raspberry Pi can be found [here](https://electrodrome.net/forum/rpi-pi-fusion-general-installation/242-manuelle-installation-von-pi-fusion).
 
+#### Warning
+Pi Fusion is installed into the path /var/www/html/fusion. You can not change the directory, it is hard-coded at time.
+
 ## Start Pi Fusion Dashboard:
 ### Locally on the Raspberry Pi
 Start a web browser and enter the following URL:
