@@ -1,3 +1,3 @@
 ### CHANGE LOG:
-**v0.1.0**
-- AdminLTE Template Design
+**v0.5.0**
+- Test release
