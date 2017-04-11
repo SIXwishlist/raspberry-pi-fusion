@@ -13,10 +13,8 @@ $configArray = read_Settings();
   <title>Pi Fusion | Dashboard</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  
   <!-- Refresh -->
   <meta HTTP-EQUIV=Refresh CONTENT='<?php echo $configArray ['page_reload_dashboard']; ?>'>
-  
   <!-- Bootstrap 3.3.6 -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -31,9 +29,10 @@ $configArray = read_Settings();
   <link rel="stylesheet" href="dist/css/skins/skin-blue.min.css">
   <!-- iCheck -->
   <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
-  
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="pages/includes/favicon.ico" />
+  <!-- CSS LED -->
+  <link rel="stylesheet" href="plugins/css-led/led.css">
   
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,24 +60,11 @@ $configArray = read_Settings();
       </a>
 	  <div class="navbar-custom-menu">
 	    <ul class="nav navbar-nav navbar-right">
-        <li><a title="Refresh page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
-		<li><a href="pages/tools_terminal.php">Terminal</a></li>
-		<li><a href="#">GPIO</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Reboot</a></li>
-			<li><a href="#">Shutdown</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Clean Memory</a></li>
-            <li><a href="#">Clean Storage</a></li>
-			<li class="divider"></li>
-            <li><a href="#">System Upgrade</a></li>
-			<li><a href="#">System Dist-Upgrade</a></li>
-			<li><a href="#">Firmware Upgrade</a></li>
-          </ul>
+		<li><a title="Console" href="pages/tools_terminal.php">Terminal</a></li>
+		<li><a title="GPIO Control" href="#">GPIO</a></li>
+		<li><a title="Reload page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
 		<li><a title="Settings" href="pages/pif_settings.php"><i class="fa fa-gear"></i></a></li>
-		<li><a title="LOGOUT" href="#"><i class="fa fa-power-off"></i></a></li>
+		<li><a title="Logout" href="#"><i class="fa fa-power-off"></i></a></li>
 		<li>&nbsp; &nbsp; &nbsp;</li>
       </div>
     </nav>
@@ -88,7 +74,6 @@ $configArray = read_Settings();
   <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
-	
 	
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
@@ -105,7 +90,6 @@ $configArray = read_Settings();
             <li><a href="pages/rpi_status.php"><i class="fa fa-bar-chart"></i> Status Information</a></li>
           </ul>
         </li>
-        
 		
         <li class="treeview">
           <a href="#">
@@ -227,6 +211,7 @@ $configArray = read_Settings();
           <ul class="treeview-menu">
 			<li><a href="pages/tools_phpinfo.php"><i class="fa  fa-info"></i> PHP Info</a></li>
 			<li><a href="pages/tools_pla.php"><i class="fa fa-database"></i> PHP Lite Admin</a></li>
+			<li><a href="#"><i class="fa fa-arrow-circle-up"></i> System Upgrades</a></li>
 			<li><a href="pages/tools_terminal.php"><i class="fa fa-terminal"></i> Terminal</a></li>
           </ul>
         </li>
@@ -289,6 +274,57 @@ $configArray = read_Settings();
 
     <!-- Main content -->
     <section class="content">
+	
+	<?php  // process form - save
+	
+	if(isset($_POST['reboot'])) {
+		exec("php -f lib/actions/reboot.php > /dev/null 2>&1 &")
+		
+		?>
+		<div id="div-action" class="callout callout-danger">
+        <h4>REBOOT!</h4>
+		<p>Your Raspberry Pi will reboot in 10 seconds.</p>
+        </div>
+		<?php
+	}
+	
+	if(isset($_POST['shutdown'])) {
+		exec("php -f lib/actions/shutdown.php > /dev/null 2>&1 &")
+		
+		?>
+		<div id="div-action" class="callout callout-danger">
+        <h4>SHUTDOWN!</h4>
+		<p>Your Raspberry Pi will shutdown in 10 seconds.</p>
+        </div>
+		<?php
+	}
+	
+	if(isset($_POST['clean-cache'])) {
+		exec("php -f lib/actions/clean_cache.php > /dev/null 2>&1 &")
+		
+		?>
+		<div id="div-action" class="callout callout-danger">
+        <h4>CLEAN RAM CACHE!</h4>
+		<p>The RAM cache has been cleaned. Do not if your Raspberry Pi is running as a server. This could cause problems.</p>
+        </div>
+		<?php
+	}
+	
+	if(isset($_POST['clean-storage'])) {
+		exec("php -f lib/actions/clean_storage.php > /dev/null &")
+		
+		?>
+		<div id="div-action" class="callout callout-danger">
+        <h4>CLEAN STORAGE!</h4>
+		<p>The storage has been cleaned. Do not if your Rspberry Pi is running as a server. This could cause problems.</p>
+        </div>
+		<?php
+	}
+	
+	?>
+	
+	<form method="post" action="index.php">
+	
       <!-- Small boxes (Stat box) -->
       <div class="row">
 		
@@ -355,7 +391,6 @@ $configArray = read_Settings();
       </div>
       <!-- /.row -->
 	  
-	  
 	  <!-- Small boxes (Stat box) -->
       <div class="row">
         <div class="col-lg-3 col-xs-6">
@@ -421,6 +456,79 @@ $configArray = read_Settings();
 
 	  <div class="row">
 	  
+	  <div class="col-md-3">
+ 	      <div class="box box-solid box-default">
+            <div class="box-header">
+              <h3 class="box-title">Actions</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tbody>
+				<tr>
+					<td><button type="submit" name="reboot" class="btn btn-block btn-primary btn-xs">Reboot</button></td>
+                </tr>
+				<tr>
+					<td><button type="submit" name="shutdown" class="btn btn-block btn-primary btn-xs">Shutdown</button></td>
+                </tr>
+				<tr>
+					<td><button type="submit" name="clean-cache" class="btn btn-block btn-primary btn-xs">Clean RAM Cache</button></td>
+                </tr>
+				<tr>
+					<td><button type="submit" name="clean-storage" class="btn btn-block btn-primary btn-xs">Clean Storage</button></td>
+                </tr>
+				</tbody>
+				</table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+		<!-- /.box -->
+		</div>
+        <!-- /.col -->
+		
+		<div class="col-md-3">
+ 	      <div class="box box-solid box-default">
+            <div class="box-header">
+              <h3 class="box-title">Activated interfaces <small>(config.txt)</small></h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table class="table table-bordered">
+                <tbody>
+				<tr>
+					<td><div class="led-green"></div></td>
+					<td>I2C</td>
+					<td><div class="led-green"></div></td>
+					<td>SPI</td>
+                </tr>
+				<tr>
+					<td><div class="led-grey"></div></td>
+					<td>Serial</td>
+					<td><div class="led-grey"></div></td>
+					<td>1-Wire</td>
+                </tr>
+				<tr>
+					<td><div class="led-grey"></div></td>
+					<td>Remote GPIO</td>
+					<td><div class="led-grey"></div></td>
+					<td>Camera</td>
+                </tr>
+				<tr>
+					<td><div class="led-green"></div></td>
+					<td>SSH</td>
+					<td><div class="led-grey"></div></td>
+					<td>VNC</td>
+                </tr>
+				
+				</tbody>
+				</table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+		<!-- /.box -->
+		</div>
+        <!-- /.col -->
+	  
 	  <div class="col-md-6">
  	      <div class="box box-solid box-default">
             <div class="box-header">
@@ -482,6 +590,8 @@ $configArray = read_Settings();
 		
 		 </div>
       <!-- /.row -->
+	  
+	  </form>
 
     </section>
     <!-- /.content -->
@@ -528,6 +638,11 @@ $configArray = read_Settings();
       "autoWidth": false
     });
   });
+</script>
+<script>
+$(document).ready(function(){
+  	$('#div-action').delay(1000).fadeIn(250).delay(8000).fadeOut(250);
+});
 </script>
 </body>
 </html>
