@@ -23,10 +23,8 @@ A lot of screenshots can be found [here](https://electrodrome.net/service/galeri
 - JavaScript enabled in the browser
 
 ## Installation:
-
 #### Important Note
-Pi Fusion is installed into the path /var/www/html/fusion. You can not change the directory, it is hard-coded at time.
-
+Pi Fusion will installed into the path /var/www/html/fusion. You can not change the directory, it is hard-coded at time.
 ### Automatic Installation (recommended)
 You can install Pi Fusion automatically with an installation script on your Raspberry Pi. You must create an SSH connection and log in as a user pi. An active Internet connection must also be available. Then type the following command on the console:
 ```
