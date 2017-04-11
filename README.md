@@ -88,6 +88,11 @@ A list of the third party components and licenses used by Pi Fusion can be found
 
 All third party licenses can be found in the included folder _licenses_.
 
+## How to contribute?
+### You are welcome, if you want to contribute to the Pi Fusion project!
+An instruction how to open an issue or a pull request can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTING.md)
+If you make an pull request you must sign/agree to the [Contributor License Agreement](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTOR-LICENSE-AGREEMENT.md)
+
 ## Contributors:
 A list of the contributors of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTORS.md).
 
