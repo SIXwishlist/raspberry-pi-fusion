@@ -86,7 +86,7 @@ The documentation of Pi Fusion is licensed under the terms of the [Creative Comm
 ## Credits & 3rd Party Licenses:
 A list of the third party components and licenses used by Pi Fusion can be found [here](docs/3RD-PARTY-LICENSES.md).
 
-All third party licenses can be found in the included folder _licenses_.
+All third party licenses can be found in the included folder _docs/licenses_.
 
 ## How to contribute?
 ### You are welcome, if you want to contribute to the Pi Fusion project!
