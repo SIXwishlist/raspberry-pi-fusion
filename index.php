@@ -231,12 +231,12 @@ $configArray = read_Settings();
                 </span>
               </a>
               <ul class="treeview-menu">
-				<li><a href="pages/docs_gpio_func.php"><i class="fa fa-book"></i> Functions Overview</a></li>
-				<li><a href="pages/docs_gpio_headers.php"><i class="fa fa-book"></i> Headers RPi & Zero</a></li>		
-				<li><a href="pages/docs_gpio_headers_cm.php"><i class="fa fa-book"></i> Headers CM & I/O Board</a></li>				
+				<li><a href="pages/docu_gpio_func.php"><i class="fa fa-book"></i> Functions Overview</a></li>
+				<li><a href="pages/docu_gpio_headers.php"><i class="fa fa-book"></i> Headers RPi & Zero</a></li>		
+				<li><a href="pages/docu_gpio_headers_cm.php"><i class="fa fa-book"></i> Headers CM & I/O Board</a></li>				
               </ul>
             </li>
-			<li><a href="pages/docs_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
+			<li><a href="pages/docu_board_revs.php"><i class="fa fa-book"></i> Board Revisions</a></li>
           </ul>
         </li>
 		

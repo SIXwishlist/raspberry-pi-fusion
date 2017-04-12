@@ -14,24 +14,11 @@
       </a>
 	  <div class="navbar-custom-menu">
 	    <ul class="nav navbar-nav navbar-right">
-        <li><a title="Refresh page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
-		<li><a href="../pages/tools_terminal.php">Terminal</a></li>
-		<li><a href="#">GPIO</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Reboot</a></li>
-			<li><a href="#">Shutdown</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Clean Memory</a></li>
-            <li><a href="#">Clean Storage</a></li>
-			<li class="divider"></li>
-            <li><a href="#">System Upgrade</a></li>
-			<li><a href="#">System Dist-Upgrade</a></li>
-			<li><a href="#">Firmware Upgrade</a></li>
-          </ul>
+		<li><a title="Console" href="../pages/tools_terminal.php">Terminal</a></li>
+		<li><a title="GPIO Control" href="#">GPIO</a></li>
+		<li><a title="Reload page" href="javascript:location.reload(true);"><i class="fa fa-refresh"></i></a></li>
 		<li><a title="Settings" href="../pages/pif_settings.php"><i class="fa fa-gear"></i></a></li>
-		<li><a title="LOGOUT" href="#"><i class="fa fa-power-off"></i></a></li>
+		<li><a title="Logout" href="#"><i class="fa fa-power-off"></i></a></li>
 		<li>&nbsp; &nbsp; &nbsp;</li>
       </div>
     </nav>
