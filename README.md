@@ -90,6 +90,7 @@ All third party licenses can be found in the included folder _docs/licenses_.
 
 ## How to contribute?
 **You are welcome, if you want to contribute to the Pi Fusion project!**
+
 An instruction how to open an issue or a pull request can be found [here](docs/CONTRIBUTING.md).
 
 If you make an pull request you must sign/agree to the [Contributor License Agreement](docs/CONTRIBUTOR-LICENSE-AGREEMENT.md).
