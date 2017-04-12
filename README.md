@@ -84,22 +84,22 @@ Pi Fusion is an Open-Source-Project by Andreas Potthoff and contributors, that i
 The documentation of Pi Fusion is licensed under the terms of the [Creative Commons Attribution-ShareAlike 3.0 International license](https://creativecommons.org/licenses/by-sa/3.0/).
 
 ## Credits & 3rd Party Licenses:
-A list of the third party components and licenses used by Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/3RD-PARTY-LICENSES.md).
+A list of the third party components and licenses used by Pi Fusion can be found [here](docs/3RD-PARTY-LICENSES.md).
 
 All third party licenses can be found in the included folder _licenses_.
 
 ## How to contribute?
 ### You are welcome, if you want to contribute to the Pi Fusion project!
-An instruction how to open an issue or a pull request can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTING.md).
+An instruction how to open an issue or a pull request can be found [here](docs/CONTRIBUTING.md).
 
-If you make an pull request you must sign/agree to the [Contributor License Agreement](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTOR-LICENSE-AGREEMENT.md).
+If you make an pull request you must sign/agree to the [Contributor License Agreement](docs/CONTRIBUTOR-LICENSE-AGREEMENT.md).
 
 ## Contributors:
-A list of the contributors of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CONTRIBUTORS.md).
+A list of the contributors of Pi Fusion can be found [here](docs/CONTRIBUTORS.md).
 
 ## To-do-list:
-The To-Do-list of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/TO-DO-LIST.md).
+The To-Do-list of Pi Fusion can be found [here](docs/TO-DO-LIST.md).
 
 ## Change log:
-The change log list of Pi Fusion can be found [here](https://github.com/ElectroDrome/raspberry-pi-fusion/blob/master/CHANGELOG.md).
+The change log list of Pi Fusion can be found [here](docs/CHANGELOG.md).
 
