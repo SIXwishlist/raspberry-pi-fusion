@@ -3,31 +3,31 @@
 - [ ] System Information: Operating System: Running services: start/stop button and function
 
 - General
- - Operating system
-  - [ ] Support of other operating systems (Currently not planned)
- - Languages
-  - [ ] Support of multilingualism (Currently not planned)
- - Installation
-  - [ ] Automatic installation script (In progress)
- - Security
-  - [ ] Login with username and password
+  - Operating system
+    - [ ] Support of other operating systems (Currently not planned)
+  - Languages
+    - [ ] Support of multilingualism (Currently not planned)
+  - Installation
+    - [ ] Automatic installation script (In progress)
+  - Security
+    - [ ] Login with username and password
 - Dashboard
- - [ ] Dashbord Overview
- - [ ] Status Information
+  - [ ] Dashbord Overview
+  - [ ] Status Information
 - System information
- - Board & SoC
   - Board & SoC
-  - CPU
-  - Memory
-  - Network
-  - Storage
+    - Board & SoC
+    - CPU
+    - Memory
+    - Network
+    - Storage
  - Interfaces
-  - Audio / Video
-  - GPIO Status
-  - USB Devices
+   - Audio / Video
+   - GPIO Status
+   - USB Devices
  - Operating System
-  - General Information
-  - Kernel Modules
-  - Running Processes
-  - Software Packages
-  - Users & Groups
+   - General Information
+   - Kernel Modules
+   - Running Processes
+   - Software Packages
+   - Users & Groups
