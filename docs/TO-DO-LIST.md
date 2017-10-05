@@ -1,7 +1,5 @@
 ### To-Do List
 **This is a to-do list of Pi Fusion. This list is updated frequently. Suggestions and also solutions are welcome.**
-- [ ] System Information: Operating System: Running services: start/stop button and function
-
 - General
   - Operating system
     - [ ] Support of other operating systems (Currently not planned)
@@ -29,5 +27,7 @@
    - [ ] General Information
    - [ ] Kernel Modules
    - [ ] Running Processes
+   - [ ] Running Services
+         - [ ] start/stop button and function
    - [ ] Software Packages
    - [ ] Users & Groups
