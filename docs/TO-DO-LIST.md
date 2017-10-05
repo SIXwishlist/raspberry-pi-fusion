@@ -15,7 +15,7 @@
 - System information
   - Board & SoC
     - [ ] Board & SoC
-    - [ ] CPU
+    - [x] CPU
     - [ ] Memory
     - [ ] Network
     - [ ] Storage
