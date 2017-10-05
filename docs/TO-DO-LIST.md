@@ -28,6 +28,6 @@
    - [ ] Kernel Modules
    - [ ] Running Processes
    - [ ] Running Services
-         - [ ] start/stop button and function
+      - [ ] start/stop button and function
    - [ ] Software Packages
    - [ ] Users & Groups
