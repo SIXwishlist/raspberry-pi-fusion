@@ -48,12 +48,21 @@
       - [x] GPIO status table
 	  - [x] GPIO information (notes)
    - [x] USB Devices
-      - [x] USB deveices tableSoC voltages
+      - [x] USB devices table
  - Operating System
+   - [ ] Cron Jobs
    - [ ] General Information
-   - [ ] Kernel Modules
-   - [ ] Running Processes
+   - [x] Kernel Modules (overview)
+      - [x] Installed kernel modules table
+   - [x] Running Processes
+      - [x] Running processes table
    - [ ] Running Services
-      - [ ] start/stop button and function
-   - [ ] Software Packages
-   - [ ] Users & Groups
+	  - [x] Running services table
+         - [ ] start/stop button and function
+   - [x] Software Packages
+      - [x] Installed software packages table
+   - [x] Users & Groups
+      - [x] Last logged in users
+	  - [x] User in groups table
+	  - [x] Groups table
+	  - [x] Users table
