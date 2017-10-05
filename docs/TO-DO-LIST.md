@@ -14,11 +14,19 @@
   - [ ] Status Information
 - System information
   - Board & SoC
-    - [ ] Board & SoC
+    - [x] Board & SoC
+	   - [x] Board
+	   - [x] Board details
+	   - [x] SoC configuration (integer values)
+	   - [x] SoC frequencies
+	   - [x] SoC codecs
+	   - [x] SoC voltages
     - [x] CPU
-    - [ ] Memory
-    - [ ] Network
-    - [ ] Storage
+	   - [x] CPU status view
+	   - [x] CPU details
+    - [x] Memory
+    - [x] Network
+    - [x] Storage
  - Interfaces
    - [ ] Audio / Video
    - [ ] GPIO Status
