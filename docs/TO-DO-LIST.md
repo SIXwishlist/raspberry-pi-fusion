@@ -16,18 +16,18 @@
   - [ ] Status Information
 - System information
   - Board & SoC
-    - Board & SoC
-    - CPU
-    - Memory
-    - Network
-    - Storage
+    - [ ] Board & SoC
+    - [ ] CPU
+    - [ ] Memory
+    - [ ] Network
+    - [ ] Storage
  - Interfaces
-   - Audio / Video
-   - GPIO Status
-   - USB Devices
+   - [ ] Audio / Video
+   - [ ] GPIO Status
+   - [ ] USB Devices
  - Operating System
-   - General Information
-   - Kernel Modules
-   - Running Processes
-   - Software Packages
-   - Users & Groups
+   - [ ] General Information
+   - [ ] Kernel Modules
+   - [ ] Running Processes
+   - [ ] Software Packages
+   - [ ] Users & Groups
