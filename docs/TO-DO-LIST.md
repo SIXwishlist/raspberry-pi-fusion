@@ -26,7 +26,7 @@
 	   - [x] CPU details
     - [x] Memory
 	   - [x] Memory status view
-	   - [x] Memory infoSoC
+	   - [x] Memory info
 	   - [x] RAM usage (processes)
     - [x] Network
 	   - [x] LAN traffic
@@ -51,6 +51,8 @@
       - [x] USB devices table
  - Operating System
    - [ ] Cron Jobs
+      - [ ] Cron jobs table
+	  - [ ] add/edit/delete cron job
    - [ ] General Information
    - [x] Kernel Modules (overview)
       - [x] Installed kernel modules table
