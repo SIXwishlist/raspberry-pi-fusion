@@ -25,12 +25,30 @@
 	   - [x] CPU status view
 	   - [x] CPU details
     - [x] Memory
+	   - [x] Memory status view
+	   - [x] Memory infoSoC
+	   - [x] RAM usage (processes)
     - [x] Network
+	   - [x] LAN traffic
+	   - [x] WLAN traffic
+	   - [x] Bluetooth traffic
+	   - [x] LAN details (eth0)
+	   - [x] WLAN details (wlan0)
+	   - [x] Bluetooth details (hci0)
+	   - [x] Network details
     - [x] Storage
+	   - [x] Storage status
+	   - [x] Storage usages details
  - Interfaces
    - [ ] Audio / Video
-   - [ ] GPIO Status
-   - [ ] USB Devices
+      - [x] Audio devices
+	  - [x] Video codecs
+	  - [ ] Camera
+   - [x] GPIO Status
+      - [x] GPIO status table
+	  - [x] GPIO information (notes)
+   - [x] USB Devices
+      - [x] USB deveices tableSoC voltages
  - Operating System
    - [ ] General Information
    - [ ] Kernel Modules
